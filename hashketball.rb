@@ -157,7 +157,7 @@ def game_hash
         team.each do |attribute, data|
           if attribute == :players
             data.each do |player|
-              num << player[:number]
+              nums << player[:number]
             end
           end
         end
