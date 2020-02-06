@@ -174,10 +174,10 @@ def game_hash
           data.each do |player|
             if player[:players_name] == players_name
               new_hash = player
+            end
+          end
         end
-          
       end
-      
     end
   end
   
