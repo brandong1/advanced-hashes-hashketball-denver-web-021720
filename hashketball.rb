@@ -156,9 +156,8 @@ def game_hash
         team.each do |attribute, data|
           if attribute == :players
             data.each do }player|
-            player[:number]
-          end
-            binding.pry
+              player[:number]
+            end
           end
         end
       end
