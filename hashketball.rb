@@ -173,7 +173,9 @@ def game_hash
         if attributes == :players 
           data.each do |player|
             if player[:players_name] == players_name
-              new_hash = player
+              new_hash = player.delete_if do |k, v|
+                k == :player_name
+              end
             end
           end
         end
